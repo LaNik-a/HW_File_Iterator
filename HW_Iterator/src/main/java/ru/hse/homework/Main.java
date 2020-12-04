@@ -18,7 +18,7 @@ public class Main {
      * Получить введенную строку пользователем
      *
      * @param sc Сканнер
-     * @return true-пользоваиель захотел итерироваться по файлу, false в обратном случае
+     * @return true-пользоваиель захотел итерироваться по файлу, false в обратном случае.
      */
     static boolean getUserWish(Scanner sc) {
         System.out.println("Для итерации по файлу нажмите Enter");
