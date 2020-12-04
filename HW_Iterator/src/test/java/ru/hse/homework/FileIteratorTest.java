@@ -1,11 +1,16 @@
 package ru.hse.homework;
 
 
+import java.io.IOException;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class FileIteratorTest {
     String path = "./src/main/resources/testIterator";
     FileIterator it = new FileIterator(path);
+
+    FileIteratorTest() throws Exception {
+    }
 
     @org.junit.jupiter.api.Test
     void hasNext() {
@@ -26,10 +31,7 @@ class FileIteratorTest {
         assertNull(it.next());
     }
 
-    @org.junit.jupiter.api.Test
-    void remove() {
-        it.remove();
-    }
+
 
     @org.junit.jupiter.api.Test
     void testException() {
